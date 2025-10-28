@@ -1,3 +1,4 @@
+import 'package:flavours/branch_first.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -36,16 +37,28 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text('Flutter Flavours'),
       ),
-      body: const Center(
+      body:  Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
+           const Text(
               'Main Branch',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),
+            ),
+            const SizedBox(height: 30),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const BranchFirstScreen(),
+                  ),
+                );
+              },
+              child: const Text('Go to Branch 1 Screen'),
             ),
           ],
         ),
