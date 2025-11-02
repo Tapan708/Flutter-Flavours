@@ -9,14 +9,22 @@ class BranchFirstScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Branch 1'),
       ),
-      body: const Center(
-        child: Text(
-          'Branch 1',
-          style: TextStyle(
-            fontSize: 26,
-            fontWeight: FontWeight.bold,
+      body: const Column(
+        children: [
+           Center(
+            child: Text(
+              'Branch 1',
+              style: TextStyle(
+                fontSize: 26,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
-        ),
+          Text(
+            'This is the first branch screen.',
+            style: TextStyle(fontSize: 18),
+          ),
+        ],
       ),
     );
   }
