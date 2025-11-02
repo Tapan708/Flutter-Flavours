@@ -1,4 +1,3 @@
-import 'package:flavours/branch_first.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -51,12 +50,12 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(height: 30),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const BranchFirstScreen(),
-                  ),
-                );
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(
+                //     builder: (context) => const BranchFirstScreen(),
+                //   ),
+                // );
               },
               child: const Text('Go to Branch 1 Screen'),
             ),
